@@ -43,6 +43,7 @@
 							</h:panelGrid>
 			</h:form>
 		</center>
+		<br/>
 </f:view>
 </body>
 </html>
