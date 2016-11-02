@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14762300590150" configfile="/f16g321_ajhawa2/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="FileuploadJSF" x="338" y="178" id="pf14768968353000" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" outlinks="pf14768968353011 pf14768968353012" inlinks="pf14768968353011 pf14768968353012" path="/dataImport.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="d" x="122" y="178" id="pf14772439003270" referenceLink="//@navigationRule.1/@navigationCase.1/@toViewId|" outlinks="pf14772439003271 pf14780232908161" inlinks="pf14772439003271" path="/databaseLogin.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="databaseView" x="122" y="562" id="pf14772439003273" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" path="/dataImport.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="databaseView" id="pf14780232908162" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf14780232908161" path="/databaseView.jsp"/>
+  <links id="pf14768968353011" target="pf14768968353000" source="pf14768968353000" outcome="Success" redirect="true">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf14768968353012" target="pf14768968353000" source="pf14768968353000" outcome="Failure">
+    <bendPoints d1Height="-66" d2Height="-66"/>
+    <bendPoints d1Width="-94" d1Height="-66" d2Width="-94" d2Height="-66"/>
+    <bendPoints d1Width="-94" d2Width="-94"/>
+  </links>
+  <links id="pf14772439003271" target="pf14772439003270" source="pf14772439003270" outcome="Failure">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf14780232908161" target="pf14780232908162" source="pf14772439003270" outcome="SUCCESS" redirect="true"/>
+</pageflow:Pageflow>
